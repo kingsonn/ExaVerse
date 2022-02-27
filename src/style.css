@@ -1,0 +1,136 @@
+body {
+  font-family: Orbitron !important;
+  background-color: #497BCD;
+}
+
+body h4, h3, h5, p {
+  color: whitesmoke;
+}
+
+#video-output {
+  transform: scaleX(-1);
+  border: 5px solid #FB35F3;
+}
+
+#welcom-bg {
+  background-color: #497BCD;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+#welcom-bg-container {
+  margin-top: 17vh;
+  color: whitesmoke;
+}
+
+#main-canvas {
+  margin-top: 7vh;
+}
+
+#main-canvas canvas {
+  color: #F0E6FE;
+  border: 3px solid hotpink;
+}
+
+@media all and (min-width: 450px) {
+  :root {
+    --webcam-width: 15vw;
+  }
+}
+
+@media all and (max-width: 450px) {
+  :root {
+    --webcam-width: 38vw;
+  }
+  #welcom-bg {
+    margin-top: 12vh;
+  }
+  #score-info {
+    display: none;
+  }
+}
+
+.webcam-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--webcam-width);
+}
+
+#how-to-play {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#newsletter {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#find-me-on-yt {
+  background-color: #ed302f;
+}
+
+#nav-text {
+  line-height: 0.5;
+}
+
+#main-nav {
+  background-color: #132028;
+  color: #F7F7F8;
+}
+
+#main-nav p {
+  color: #C64314;
+}
+
+#play-btn {
+  background-color: darkred;
+  color: #F0E6FE;
+}
+
+#welcom-bg-container h5 {
+  color: darkblue;
+}
+
+#welcom-bg-container .pxl-art {
+  color: chartreuse;
+}
+
+#welcom-bg-container p {
+  color: #4c555e;
+}
+
+#title-and {
+  color: aqua;
+}
+
+#title-move {
+  color: chocolate;
+}
+
+.space-icons img {
+  width: 3vw;
+}
+
+#spinner {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1
+}
+
+#spinner .spinner-border {
+  width: 6rem;
+  height: 6rem;
+  border-width: 0.5rem;
+}

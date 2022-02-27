@@ -1,0 +1,35 @@
+{
+  "name": "space-stretch",
+  "version": "1.0.0",
+  "description": "space-stretch",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=14.17.0"
+  },
+ 
+  "author": "Hanson Braganza",
+  "license": "ISC",
+  "dependencies": {
+    "@mediapipe/pose": "~0.4.1",
+    "@tensorflow-models/pose-detection": "^0.0.6",
+    "@tensorflow/tfjs": "^3.11.0",
+    "@tensorflow/tfjs-backend-wasm": "^3.11.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.11.0",
+    "@tensorflow/tfjs-converter": "^3.11.0",
+    "@tensorflow/tfjs-core": "^3.11.0",
+    "parcel-bundler": "^1.12.5",
+    "party-js": "^2.0.1",
+    "phaser": "^3.55.2"
+  },
+  "staticFiles": {
+    "staticPath": "./node_modules/@tensorflow/tfjs-backend-wasm/dist",
+    "excludeGlob": ["**/!(*.wasm)"]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "babel-jest": "^27.0.5",
+    "jest": "^27.0.5",
+    "ts-jest": "^27.0.3",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  }
+}

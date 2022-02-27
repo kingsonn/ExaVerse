@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="vendor/icon/car90.ico" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
+
+  <!-- fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExaVerse</title>
+</head>
+
+<body style="background-color: black;">
+  <!-- nav section -->
+  <nav style="text-align: center;" id="main-nav" class="navbar">
+    <div style="text-align: center;" class="container-fluid">
+      <div id="nav-text" style="text-align: center; margin-left:40%" class="float-start">
+        <h5>ExaVerse</h5>
+        <p>move, strech 💪 and Stay Healthy</p>
+        </p>
+      </div>
+    </div>
+  </nav>
+  <div id="spinner" class="visually-hidden">
+    <br>
+    <div class="d-flex justify-content-center">
+      <h1 class="text-info">
+        Loading AI
+        <i class="fas fa-robot text-light"></i>
+        &nbsp;
+        <h1>
+    </div>
+    <br>
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border text-danger" role="status"></div>
+    </div>
+  </div>
+  <!-- Welcome section -->
+  <div id="welcom-bg" class="container-fluid">
+    <div id="welcom-bg-container" class="text-center">
+      <h3>Ulimate Strech Racing</h3>
+      <br>
+      <div class="space-icons">
+        <img src="vendor/assets/images/car90.png" />
+        <img src="vendor/assets/images/hotdog.png" />
+        <img src="vendor/assets/images/car90.png" />
+      </div>
+      <br>
+      <button id="play-btn" type="button" class="btn btn-outline-danger btn-lg align-self-center">play 🎮</button>
+      <br>
+      <br>
+      <h5>you will need to allow acces to your webcam/camera 📷</h5>
+      <h5 class="pxl-art"></h5>
+    </div>
+  </div>
+  
+  <!-- Game section -->
+  <div style="display: none !important;" id="main-canvas" class="d-flex justify-content-center"></div>
+  <video id="video" autoplay playsinline muted style="display: none;"></video>
+  <canvas style="display: none;" id="video-output" class="webcam-position"></canvas>
+  
+  <script src="game-state.js"></script>
+  <script src="space-stretch-2.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
